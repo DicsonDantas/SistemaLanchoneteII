@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 public class Start {
-	public static void main(String[] args) throws ParseException {
+	public static void main(String[] args){
 		Integer escolha = 0; 
 		Scanner read = new Scanner(System.in); 
 		  
@@ -24,14 +24,14 @@ public class Start {
 		
 	    do {		    		    	    	
 	       System.out.println("-------- Ola seja bem vindo ao Mastery Lanches! --------");
-System.out.println(" J· possui cadastro? Se n„o digite 3 para realizar o cadastro! ");
-	        System.out.println("1- Efetuar Pedido  : \n2- Registrar Itens : \n3- Cadastrar cliente :  \n3- Excluir cadastro : \n4- Alterar pedido  : \n5- Fechar caixa ");
+System.out.println(" J√° possui cadastro? Se n√£o digite 3 para realizar o cadastro! ");
+	        System.out.println("1- Efetuar Pedido  : \n2- Registrar Itens : \n3- Cadastrar cliente :   ");
 	        escolha = read.nextInt() ; 
 	        	     switch(escolha){
-	        	 case 1 : controleitem.cadastrarItem(); ; break; 
+	        	 case 1 : controlepedido.efetuarPedido(); break; 
 	        	 case 2 : controleitem.cadastrarItem();  break;
 	        	 case 3 : controlecliente.cadastrarCliente(); break;
-	        	 // case 4 : itens.add(item4);  ;break;
+	        
 	        	        
 	        	        }
 	
