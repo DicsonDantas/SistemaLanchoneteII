@@ -1,0 +1,15 @@
+§ é necessário revisar a classe MAIN e o SWITCH que está dentro dela, alguns UC, ex: Alterar cliente.  
+Devem ser integrados em uma classe "ManterCliente", e deve ser ajustado esse switch e revisado. 
+Também pode se alterar essa classe Start para que fique mais limpa, e só chame metodos e os metódos fique em seu body.
+Só deixei na classe START os métodos que estão funcionando dentro do laço switch, é necessário fazer um levantamento de todos os métodos futuros que devam ser criados. 
+
+§ É necessário alterar atributos do tipo data para date. 
+
+§ É necessário revisar e implementar o método efetuarpedido, podemos pensar juntos em uma maneira ou utilizando List para antes de obtermos os itens que foram gravados na DB, 
+conseguirmos manipular os objetos de forma que tenhamos sucesso em criar um "Pedido" coisa que ainda não ocorreu. Depois de conseguirmos criar um pedido com uso e OO, 
+podemos usar JPQL para obter todos os dados do pedido, sem muita dificuldade. 
+
+§ Lembrando posso ativar o meu pc em  Teamviewer caso não queira instalar o postgree ou mysql, e vc pode mecher
+sempre que eu estiver aqui fazer testes no DB.
+ou criar ai, tanto faz. 
+good luck 
