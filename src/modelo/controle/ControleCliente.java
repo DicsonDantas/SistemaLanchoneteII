@@ -1,5 +1,4 @@
 package modelo.controle;
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.util.Scanner;
 import modelo.dao.ClienteDAO;
@@ -11,7 +10,7 @@ public class ControleCliente{
 Scanner read = new Scanner (System.in); 
 Cliente cli = new Cliente();
 
-	public void cadastrarCliente() throws ParseException{ 
+	public void cadastrarCliente(){ 
         System.out.println("Digite o nome completo do cliente : ");
         String nome = read.nextLine(); 
         System.out.println("Digite o email do cliente : ");
@@ -22,10 +21,13 @@ Cliente cli = new Cliente();
         String datanasc = read.nextLine();
          
         
-        // verificar erro // 
-        DateFormat datenasc = DateFormat.getInstance(); 
-        datenasc.parse(datanasc); 
+        // verificar erro e implementar para o tipo DATE, atributos referentes a data // 
+     
         
+        cli.setNome(nome);
+        cli.setEmail(email);
+        cli.setCpf(cpf);
+        cli.setDatanasc(datanasc);;
         
 ClienteDAO clidao = new ClienteDAO();   
 
